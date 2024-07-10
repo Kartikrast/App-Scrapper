@@ -14,4 +14,5 @@ I have implemented OOPs concept to create the backend of this program, the class
 -	Android Version
 -	Target Number = The number of leads they want to scrape
 -	Search tag = The hashtag they want to search
+
 The program will itself search the given search tag, then it will start opening the accounts one by one from the posts section, and will start scrapping and storing the data from the account profiles, finally it will create a pandas data frame and will store the output(leads) in an Excel file.
