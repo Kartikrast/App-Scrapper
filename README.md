@@ -1,45 +1,16 @@
-In this project I have created a complete automation
-process to scrape the data from the instagram
-accounts. As many small business owners are self
-employeed professionals always need leads for the
-outreach of their business, however to manully
-collect the leads is a very hectic tast, hence using this
-program they will be able to automate this process.
-This program will do the following tasks:-
-User only need to input their device details such
-as:-
-Adb device name
-Android Version
-Number of Leads they want
-Search hashtag
-The program will start from the home screen.
-Then it will open instagram.
-It will move to the search screen.
-It will enter the search tag in the search bar.
-Then once the results are available
-It will move to the “Posts” section and will start
-visiting the account of each post.
-From the account it will gather these infos:-
-Username
-No. of Followers
-No. of Following
-Email &Phone No. if the contact button is there.
-In this version, the program will only pick the unique
-accounts, otherwise it will move to the next post,
-hence only collecting the data of unique accounts. In
-this version the program will start from the posts
-section only, however in the upcoming versions we
-can get the input from the user weather they want to
-start scraping the data from the posts or account
-section.
-The program will collect the data in respected
-variables and once the scrapping is completed, it will
-give you all the data into an Excel file.
-You will be able to see the complete video on the
-working of the program, on my linkedIn page, and the
-link for the video is given on the cover page.
-I am sure there can be many improvements in this
-program that can be done, if you feel like contributing
-anything feel free to reach out to the email given
-below:-
-Email: kartik.keyrast@gmail.com
+The project has been created with the help of:
+-	Appium Server
+-	Appium Inspector
+-	Selenium
+-	Python
+-	Pandas
+-	Numpy
+-	ADB
+-	JRE/NPM
+-	REGEX
+I have implemented OOPs concept to create the backend of this program, the class Instagram_data contains several methods. The Appium session will first connect with my connected android device(virtual/real), for which we have to set the desired capabilities, the user needs to input only these details to use the program: -
+-	ADB device_name = Device name from the command (adb devices)
+-	Android Version
+-	Target Number = The number of leads they want to scrape
+-	Search tag = The hashtag they want to search
+The program will itself search the given search tag, then it will start opening the accounts one by one from the posts section, and will start scrapping and storing the data from the account profiles, finally it will create a pandas data frame and will store the output(leads) in an Excel file.
